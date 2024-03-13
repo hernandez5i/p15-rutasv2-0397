@@ -8,7 +8,7 @@ class PantallaInicial_0397 extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text("Pantalla Inicial Hernandez0397"),
-          backgroundColor: Colors.amber,
+          backgroundColor: Color(0xff63615c),
         ),
         body: Center(
             child: Column(
@@ -18,14 +18,32 @@ class PantallaInicial_0397 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantall1_0397");
               },
-              child: Text("mover a pantalla1"),
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xfff34021)),
+              ),
+              child: Text("mover a pantalla 1"),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantall2_0397");
               },
-              child: Text("mover a pantalla2"),
-            )
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xfff321d7)),
+              ),
+              child: Text("mover a pantalla 2"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/Pantall3_0397");
+              },
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xff21f367)),
+              ),
+              child: Text("mover a pantalla 3"),
+            ),
           ], //niniosn
         )));
   }

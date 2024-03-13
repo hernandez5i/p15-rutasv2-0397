@@ -8,17 +8,21 @@ class Pantalla2_0397 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Pantalla 2 Hernandez0397"),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Color(0xff007e1f),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {}, //si presiono boton
-              child: Text("Pantalla"),
-            )
-          ],
+        child: Container(
+          color: Color(0xff66c166),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 300,
+            maxWidth: 300,
+          ),
+          child: Text(
+            'Pantalla 2 Hernandez Requenes 0397',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );
